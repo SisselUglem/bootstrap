@@ -5,33 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/8c2d0c6396.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uglem Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="header__branding">
-                <img src="assets/logotype.svg" alt="Logotype" title="Uglem Logotype">
-                <img src="assets/portrait.png" alt="Portrait" title="Portrait">
+        <div class="header container-xl">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-5">
+                    <img class="img-fluid" src="assets/logotype.svg" alt="Logotype" title="Uglem Logotype">
+                </div>
+                <div class="col-5">
+                    <img class="img-fluid" src="assets/portrait.png" alt="Portrait" title="Portrait">
+                </div>
             </div>
-            <nav class="nav">
-                <div class="line"></div>
-                <ul class="nav__main">
-                    <li><a class="current" href="om__mig">OM MIG</a></li>
-                    <li><a href="tjanster">TJÄNSTER</a></li>
-                    <li><a href="portfolio">PORTFOLIO</a></li>
-                    <li><a href="contact">KONTAKT</a></li>
-                </ul>
-                <div class="line"></div>
+            <hr/>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link current" href="#om__mig">OM MIG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tjanster">TJÄNSTER</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+            <hr/>
         </div>
+        <!--
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        </nav>-->
     </header>
-    <main>
-        <section class="om-mig" id="om__mig">
-            <img src="assets/about.png" alt="Forset" title="Forest">
-            <div class="om-mig__article">
+    <main class="container-xl">
+        <section id="om__mig" class="row d-flex align-items-center justify-content-center mt-5 mb-5">
+            <img class="img-fluid col-4" src="assets/about.png" alt="Forset" title="Forest">
+            <div class="col-4">
                 <h2 class="om-mig__headline">Om mig</h2>
                 <p class="om-mig__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
                     non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -40,42 +73,42 @@
                 </p>
             </div>
         </section>
-        <section class="tjanster" id="tjanster">
-            <h2 class="tjanster__headline">TJÄNSTER</h2>
-            <div class="line-two"></div>
-            <div class="tjanster__areas">
-                <div class="areas-development">
-                    <i class="fas fa-laptop"></i>
-                    <h3 class="areas__headline">webbutveckling</h3>
-                    <p class="areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna.</p>
+        <section id="tjanster" class="flex-column justify-content-around pt-5 pb-5" >
+            <h2 class="text-center mt-5 mb-5">TJÄNSTER</h2>
+            <hr class="mx-auto w-50"/>
+            <div class="row d-flex align-items-start justify-content-center pt-5">
+                <div class="col-3 text-center p-3">
+                    <i class="icon fas fa-laptop p-3"></i>
+                    <h3 class="text-center p-3 m-0">webbutveckling</h3>
+                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna.</p>
                 </div>
-                <div class="areas-development">
-                    <i class="far fa-clone"></i>
-                    <h3 class="areas__headline">marknadsföring</h3>
-                    <p class="areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
+                <div class="col-3 text-center p-3">
+                    <i class="icon far fa-clone p-3"></i>
+                    <h3 class="text-center p-3 m-0">marknadsföring</h3>
+                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
                         non malesuada. Lorem ipsum dolor sit amet.
                     </p>
                 </div>
-                <div class="areas-development">
-                    <i class="fas fa-palette"></i>
-                    <h3 class="areas__headline">grafisk design</h3>
-                    <p class="areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada.</p>
+                <div class="col-3 text-center p-3">
+                    <i class="  icon fas fa-palette p-3"></i>
+                    <h3 class="text-center p-3 m-0">grafisk design</h3>
+                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada.</p>
                 </div>
             </div>
         </section>
-        <section class="portfolio" id="portfolio">
-            <div class="portolio__container">
-                <div class="portfolio__article">
-                    <h2 class="portfolio__headline">Portfolio</h2>
-                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
-                        Lorem ipsum dolor sit amet, Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet
+        <section id="portfolio" class="d-flex align-items-center justify-content-center row pt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4 p-2">
+                    <h2 class="text-end pt-3 pb-3">Portfolio</h2>
+                    <p class="text-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
+                        Lorem ipsum dolor sit. <br><br>Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet. Ut id iaculis magna, non malesuada.
                     </p>
                 </div>
-                <img src="assets/comp.png" alt="Keyboard" title="Keyboard">
+                <img class="img-fluid col-4 p-3" src="assets/comp.png" alt="Keyboard" title="Keyboard">
             </div>
             <div class="portfolio__logo">
-                <h3 class="logo-headline">Logotypes</h3>
-                <div class="line-two"></div>
+                <h3 class="text-center mt-5 mb-5">Logotypes</h3>
+                <hr class="mx-auto w-50"/>
                 <div class="logo-gallery">
                     <img src="assets/logotypes/logo-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
                     <img src="assets/logotypes/logo-kam.png" alt="KAM Frisör Makeup" title="KAM Frisör Makeup">

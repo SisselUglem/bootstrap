@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+    width: unset;
+}
+
+.navbar-nav {
+    gap: 20px;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    border: 1px solid #A08B62;
+    color: #A08B62;
+}
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #A08B62;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #A08B62;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.icon {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #A08B62;
+
+}
