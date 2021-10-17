@@ -15,10 +15,10 @@
     <header>
         <div class="header container-xl">
             <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-5">
+                <div class="col-12 col-sm-5">
                     <img class="img-fluid" src="assets/logotype.svg" alt="Logotype" title="Uglem Logotype">
                 </div>
-                <div class="col-5">
+                <div class="d-none d-sm-block col-sm-5">
                     <img class="img-fluid" src="assets/portrait.png" alt="Portrait" title="Portrait">
                 </div>
             </div>
@@ -30,11 +30,11 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="mydropdown">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#om__mig">OM MIG</a></li>
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#tjanster">TJÄNSTER</a></li>
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#portfolio">PORTFOLIO</a></li>
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#contact">KONTAKT</a></li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link current" href="#om__mig">OM MIG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tjanster">TJÄNSTER</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
                         </ul>
                     </div>
 
@@ -47,98 +47,118 @@
     </header>
     <main class="container-xl">
         <section id="om__mig" class="row d-flex align-items-center justify-content-center mt-5 mb-5">
-            <img class="img-fluid col-4" src="assets/about.png" alt="Forset" title="Forest">
-            <div class="col-4">
-                <h2 class="mb-4">Om mig</h2>
-                <p class="om-mig__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
+            <img class="d-sm-none d-block col-sm-10 img-fluid px-4" src="assets/portrait-resp.png" alt="Portrait" title="Portrait">
+            <img class="d-none img-fluid d-md-block col-4" src="assets/about.png" alt="Forset" title="Forest">
+            <div class="col-12 col-md-4 text-center">
+                <h2 class="text-center text-md-start my-4 my-md-1">Om mig</h2>
+                <hr class="d-block d-md-none mx-auto w-50"/>
+                <p class="d-md-none text-center mx-auto w-75 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
+                    non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut id iaculis magna, non malesuada Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <p class="d-none d-md-block text-md-start pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
                     non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ut id iaculis magna, non malesuada Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
             </div>
         </section>
-        <section id="tjanster" class="flex-column justify-content-around pt-5 pb-5" >
-            <h2 class="text-center mt-5 mb-5">TJÄNSTER</h2>
+        <section id="tjanster" class="flex-column justify-content-around pt-5 pb-0 pb-md-5" >
+            <h2 class="text-center mt-5 mb-4 mb-md-5">Tjänster</h2>
             <hr class="mx-auto w-50"/>
-            <div class="row d-flex align-items-start justify-content-center pt-5">
-                <div class="col-3 text-center p-3">
+            <div class="row d-flex justify-content-center pt-5">
+                <div class="col-10 col-md-3 text-center p-3">
                     <i class="icon fas fa-laptop p-3"></i>
-                    <h3 class="text-center p-3 m-0">webbutveckling</h3>
-                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna.</p>
+                    <h3 class="text-center p-3 m-0">Webbutveckling</h3>
+                    <p class="text-center mx-auto w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna.</p>
                 </div>
-                <div class="col-3 text-center p-3">
+                <div class="col-10 col-md-3 text-center p-3">
                     <i class="icon far fa-clone p-3"></i>
-                    <h3 class="text-center p-3 m-0">marknadsföring</h3>
-                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
+                    <h3 class="text-center p-3 m-0">Marknadsföring</h3>
+                    <p class="text-center mx-auto w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
                         non malesuada. Lorem ipsum dolor sit amet.
                     </p>
                 </div>
-                <div class="col-3 text-center p-3">
+                <div class="col-10 col-md-3 text-center p-3">
                     <i class="  icon fas fa-palette p-3"></i>
-                    <h3 class="text-center p-3 m-0">grafisk design</h3>
-                    <p class="text-center areas__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada.</p>
+                    <h3 class="text-center p-3 m-0">Grafisk design</h3>
+                    <p class="text-center mx-auto w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada.</p>
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="d-flex align-items-center justify-content-center row pt-5">
+        <section id="portfolio" class="d-flex align-items-center justify-content-center row pt-2 pt-md-5">
+            <img class="img-fluid d-md-none col-9 pb-5" src="assets/comp.png" alt="Keyboard" title="Keyboard">
             <div class="row align-items-center justify-content-center">
-                <div class="col-4 p-2">
-                    <h2 class="text-end pt-3 pb-3">Portfolio</h2>
-                    <p class="text-end pl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
+                <div class="col-12 col-md-4 p-2">
+                    <h2 class="text-center text-md-end pt-3 pb-3">Portfolio</h2>
+                    <hr class="d-block d-md-none mx-auto w-50"/>
+                    <p class="d-md-none text-center mx-auto w-75 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
+                        Lorem ipsum dolor sit. Ut id iaculis magna, non malesuada. <br><br>Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet. Ut id iaculis magna, non malesuada.
+                    </p>
+                    <p class="d-none d-md-block text-md-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
                         Lorem ipsum dolor sit. Ut id iaculis magna, non malesuada. <br><br>Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet. Ut id iaculis magna, non malesuada.
                     </p>
                 </div>
-                <img class="img-fluid col-4 p-3" src="assets/comp.png" alt="Keyboard" title="Keyboard">
+                <img class="img-fluid d-none d-md-block col-md-4 p-md-3" src="assets/comp.png" alt="Keyboard" title="Keyboard">
             </div>
-            <div class="flex-column justify-content-center pt-5 pb-5">
+            <div class="flex-column justify-content-center py-3 py-md-5">
                 <h3 class="text-center mt-5 mb-5">Logotypes</h3>
                 <hr class="mx-auto w-50 mb-3"/>
-                <div class="logo-gallery pt-5 pb-5">
+                <div class="logo-gallery py-3 py-md-5">
                     <div class="row justify-content-center">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-kam.png" alt="KAM Frisör Makeup" title="KAM Frisör Makeup">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-fjallfixarn.png" alt="Fjällfixarn" title="Fjällfixarn">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-kam.png" alt="KAM Frisör Makeup" title="KAM Frisör Makeup">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-fjallfixarn.png" alt="Fjällfixarn" title="Fjällfixarn">
                     </div>
                     <div class="row justify-content-center">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-hovslageri.png" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-fjallorren.png" alt="Fjällorren" title="Fjällorren">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-mannes.png" alt="Mannes" title="Mannes">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-hovslageri.png" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-fjallorren.png" alt="Fjällorren" title="Fjällorren">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-mannes.png" alt="Mannes" title="Mannes">
                     </div>
                     <div class="row justify-content-center">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-jesses.png" alt="Jesses Svets & Renslakt" title="Jesses Svets & Renslakt">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-hfg.png" alt="Hede Företagargrupp" title="Hede Företagargrupp">
-                        <img class="image col-2 p-2" src="assets/logotypes/logo-skinn.png" alt="Mannes Skinn & Ben" title="Mannes Skinn & Ben">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-jesses.png" alt="Jesses Svets & Renslakt" title="Jesses Svets & Renslakt">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-hfg.png" alt="Hede Företagargrupp" title="Hede Företagargrupp">
+                        <img class="image col-3 col-md-2 p-2" src="assets/logotypes/logo-skinn.png" alt="Mannes Skinn & Ben" title="Mannes Skinn & Ben">
                     </div>
                 </div>
             </div>
-            <div class="flex-column justify-content-center pt-5 pb-5">
-                <h3 class="text-center mt-5 mb-5">webbutveckling</h3>
+            <div class="flex-column justify-content-center py-3 pb-mb-5">
+                <h3 class="text-center mt-5 mb-5">Webbutveckling</h3>
                 <hr class="mx-auto w-50 mb-3"/>
-                <div class="web-gallery p-5">
+                <div class="web-gallery py-3 pb-mb-5">
                     <div class="row justify-content-center">
-                        <img class="col-4 image-fluid p-2" src="assets/web/web-mm.png" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
-                        <img class="col-4 image-fluid p-2" src="assets/web/web-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
-                    </div>
+                        <a class="d-flex overflow-hidden col-10 col-md-4 p-md-0 pb-2" href="#">
+                            <img class="web image-fluid col-12" src="assets/web/web-mm.png" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
+                        </a>
+                        <a class="d-flex overflow-hidden col-10 col-md-4 p-md-0 pb-2" href="#">
+                            <img class="web image-fluid col-12" src="assets/web/web-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
+                        </a>
+                        </div>
                     <div class="row justify-content-center">
-                        <img class="col-4 image-fluid p-2" src="assets/web/web-fjallbrollop.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
-                        <img class="col-4 image-fluid p-2" src="assets/web/web-orren.png" alt="Fjällorren" title="Fjällorren">
+                        <a class="d-flex overflow-hidden col-10 col-md-4 p-md-0 pb-2" href="#">
+                            <img class="web image-fluid col-12" src="assets/web/web-fjallbrollop.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
+                        </a>
+                        <a class="d-flex overflow-hidden col-10 col-md-4 p-md-0 pb-2" href="#">
+                            <img class="web image-fluid col-12" src="assets/web/web-orren.png" alt="Fjällorren" title="Fjällorren">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="d-flex align-items-center justify-content-center row pt-5 pb-5" id="contact">
-            <h2 class="text-center mt-5 mb-3">Kontakt</h2>
-            <hr class="mx-auto w-50 mb-5 mt-5"/>
+        <section class="d-flex align-items-center justify-content-center row py-3 py-md-5" id="contact">
+            <h2 class="text-center mt-5 md-3">Kontakt</h2>
+            <hr class="mx-auto w-50 md-5 mt-5"/>
             <div class="row justify-content-center">
-                <div class="col-3 text-center">
+                <div class="col-10 col-md-3 text-center py-4">
                     <i class="icon fas fa-envelope p-3"></i>
                     <p class="pt-3">info@uglem.se</p>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-10 col-md-3 text-center py-4">
                     <i class="icon fas fa-phone p-3"></i>
                     <p class="pt-3">+45 70 309 52 56</p>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-10 col-md-3 text-center py-4">
                     <i class="icon fas fa-map-marker-alt p-3"></i>
                     <p class="pt-3">Säterberget Rise 305<br>841 96 Hede</p>
                 </div>
@@ -146,10 +166,12 @@
         </section>
     </main>
     <footer class="container-xl">
-        <div class="footer pt-5 pb-5">
+        <div class="footer py-md-5 py-3">
             <hr/>
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
-                <img class="col-2 img-fluid" src="assets/logotype-footer.png" alt="logotype" title="Uglem Logotype">
+                <a class="web d-none d-md-block col-2 " href="index.html">
+                    <img class="img-fluid" src="assets/logotype-footer.png" alt="logotype" title="Uglem Logotype">
+                </a>
                 <div class="col-6">
                     <div class="collapse navbar-collapse justify-content-center">
                         <ul class="navbar-nav mb-2 mb-lg-0">
@@ -160,16 +182,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 socials text-center">
-                    <i class="icon-footer fab fa-facebook"></i>
-                    <i class="icon-footer fab fa-instagram"></i>
+                <div class="d-none d-md-block col-2 text-center">
+                    <a class="web" href="#"><i class="icon-footer fab fa-facebook"></i></a>
+                    <a class="web" href="#"><i class="icon-footer fab fa-instagram"></i></a>
+                </div>
+                <div class="d-block d-md-none col-12 mt-4 text-center">
+                    <a href="#"><i class="icon-footer fab fa-facebook"></i></a>
+                    <a href="#"><i class="icon-footer fab fa-instagram"></i></a>
+                </div>
+                <div class="col-10 d-md-none">
+                    <img class="img-fluid" src="assets/logotype.svg" alt="Logotype" title="Uglem Logotype">
                 </div>
             </nav>
-            <hr/>
+            <hr class="d-none d-md-block"/>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
