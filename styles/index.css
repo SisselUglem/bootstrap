@@ -83,7 +83,9 @@ p {
     border: none;
 }
 
-
+.animate__fadeInDown {
+    animation-duration: 2s;
+}
 
 .web:hover {
     filter: grayscale(100%);
