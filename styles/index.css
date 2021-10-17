@@ -42,7 +42,7 @@ p {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 25px;
     color: #FFFFFF;
 }
@@ -50,6 +50,15 @@ p {
 .icon {
     font-weight: 900;
     font-size: 48px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #A08B62;
+
+}
+
+.icon-footer {
+    font-weight: 900;
+    font-size: 35px;
     line-height: 25px;
     letter-spacing: 0.05em;
     color: #A08B62;

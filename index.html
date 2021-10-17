@@ -23,49 +23,33 @@
                 </div>
             </div>
             <hr/>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-sm navbar-dark">
                 <div class="container-fluid">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link current" href="#om__mig">OM MIG</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#tjanster">TJÄNSTER</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mydropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mydropdown">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#om__mig">OM MIG</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#tjanster">TJÄNSTER</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#contact">KONTAKT</a></li>
                         </ul>
                     </div>
+
                 </div>
+              
             </nav>
             <hr/>
         </div>
-        <!--
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            </div>
-        </div>
-        </nav>-->
+
     </header>
     <main class="container-xl">
         <section id="om__mig" class="row d-flex align-items-center justify-content-center mt-5 mb-5">
             <img class="img-fluid col-4" src="assets/about.png" alt="Forset" title="Forest">
             <div class="col-4">
-                <h2 class="om-mig__headline">Om mig</h2>
+                <h2 class="mb-4">Om mig</h2>
                 <p class="om-mig__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, 
                     non malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ut id iaculis magna, non malesuada Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -100,72 +84,97 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-4 p-2">
                     <h2 class="text-end pt-3 pb-3">Portfolio</h2>
-                    <p class="text-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
-                        Lorem ipsum dolor sit. <br><br>Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet. Ut id iaculis magna, non malesuada.
+                    <p class="text-end pl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id iaculis magna, non malesuada. 
+                        Lorem ipsum dolor sit. Ut id iaculis magna, non malesuada. <br><br>Ut id iaculis magna, non malesuada. Lorem ipsum dolor sit amet. Ut id iaculis magna, non malesuada.
                     </p>
                 </div>
                 <img class="img-fluid col-4 p-3" src="assets/comp.png" alt="Keyboard" title="Keyboard">
             </div>
-            <div class="portfolio__logo">
+            <div class="flex-column justify-content-center pt-5 pb-5">
                 <h3 class="text-center mt-5 mb-5">Logotypes</h3>
-                <hr class="mx-auto w-50"/>
-                <div class="logo-gallery">
-                    <img src="assets/logotypes/logo-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
-                    <img src="assets/logotypes/logo-kam.png" alt="KAM Frisör Makeup" title="KAM Frisör Makeup">
-                    <img src="assets/logotypes/logo-fjallfixarn.png" alt="Fjällfixarn" title="Fjällfixarn">
-                    <img src="assets/logotypes/logo-hovslageri.png" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
-                    <img src="assets/logotypes/logo-fjallorren.png" alt="Fjällorren" title="Fjällorren">
-                    <img src="assets/logotypes/logo-mannes.png" alt="Mannes" title="Mannes">
-                    <img src="assets/logotypes/logo-jesses.png" alt="Jesses Svets & Renslakt" title="Jesses Svets & Renslakt">
-                    <img src="assets/logotypes/logo-hfg.png" alt="Hede Företagargrupp" title="Hede Företagargrupp">
-                    <img src="assets/logotypes/logo-skinn.png" alt="Mannes Skinn & Ben" title="Mannes Skinn & Ben">
+                <hr class="mx-auto w-50 mb-3"/>
+                <div class="logo-gallery pt-5 pb-5">
+                    <div class="row justify-content-center">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-kam.png" alt="KAM Frisör Makeup" title="KAM Frisör Makeup">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-fjallfixarn.png" alt="Fjällfixarn" title="Fjällfixarn">
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-hovslageri.png" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-fjallorren.png" alt="Fjällorren" title="Fjällorren">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-mannes.png" alt="Mannes" title="Mannes">
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-jesses.png" alt="Jesses Svets & Renslakt" title="Jesses Svets & Renslakt">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-hfg.png" alt="Hede Företagargrupp" title="Hede Företagargrupp">
+                        <img class="image col-2 p-2" src="assets/logotypes/logo-skinn.png" alt="Mannes Skinn & Ben" title="Mannes Skinn & Ben">
+                    </div>
                 </div>
             </div>
-            <div class="portfolio__web">
-                <h3 class="web-headline">webbutveckling</h3>
-                <div class="line-two"></div>
-                <div class="web-gallery">
-                    <img src="assets/web/web-mm.png" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
-                    <img src="assets/web/web-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
-                    <img src="assets/web/web-fjallbrollop.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
-                    <img src="assets/web/web-orren.png" alt="Fjällorren" title="Fjällorren">
+            <div class="flex-column justify-content-center pt-5 pb-5">
+                <h3 class="text-center mt-5 mb-5">webbutveckling</h3>
+                <hr class="mx-auto w-50 mb-3"/>
+                <div class="web-gallery p-5">
+                    <div class="row justify-content-center">
+                        <img class="col-4 image-fluid p-2" src="assets/web/web-mm.png" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
+                        <img class="col-4 image-fluid p-2" src="assets/web/web-nysatern.png" alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="col-4 image-fluid p-2" src="assets/web/web-fjallbrollop.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
+                        <img class="col-4 image-fluid p-2" src="assets/web/web-orren.png" alt="Fjällorren" title="Fjällorren">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <h2 class="contact__headline">Kontakt</h2>
-            <div class="contact__info">
-                <div class="email">
-                    <i class="fas fa-envelope"></i>
-                    <p>info@uglem.se</p>
+        <section class="d-flex align-items-center justify-content-center row pt-5 pb-5" id="contact">
+            <h2 class="text-center mt-5 mb-3">Kontakt</h2>
+            <hr class="mx-auto w-50 mb-5 mt-5"/>
+            <div class="row justify-content-center">
+                <div class="col-3 text-center">
+                    <i class="icon fas fa-envelope p-3"></i>
+                    <p class="pt-3">info@uglem.se</p>
                 </div>
-                <div class="phone">
-                    <i class="fas fa-phone"></i>
-                    <p>+45 70 309 52 56</p>
+                <div class="col-3 text-center">
+                    <i class="icon fas fa-phone p-3"></i>
+                    <p class="pt-3">+45 70 309 52 56</p>
                 </div>
-                <div class="map">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Säterberget Rise 305<br>841 96 Hede</p>
+                <div class="col-3 text-center">
+                    <i class="icon fas fa-map-marker-alt p-3"></i>
+                    <p class="pt-3">Säterberget Rise 305<br>841 96 Hede</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="line"></div>
-            <img src="assets/logotype.svg" alt="logotype" title="Uglem Logotype">
-            <ul class="nav__main">
-                <li><a class="current" href="om__mig">OM MIG</a></li>
-                <li><a href="tjanster">TJÄNSTER</a></li>
-                <li><a href="portfolio">PORTFOLIO</a></li>
-                <li><a href="contact">KONTAKT</a></li>
-            </ul>
-            <div class="socials">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-            <div class="line"></div>
+    <footer class="container-xl">
+        <div class="footer pt-5 pb-5">
+            <hr/>
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+                <img class="col-2 img-fluid" src="assets/logotype-footer.png" alt="logotype" title="Uglem Logotype">
+                <div class="col-6">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link current" href="#om__mig">OM MIG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tjanster">TJÄNSTER</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 socials text-center">
+                    <i class="icon-footer fab fa-facebook"></i>
+                    <i class="icon-footer fab fa-instagram"></i>
+                </div>
+            </nav>
+            <hr/>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 </html>
